@@ -18,5 +18,6 @@ class GoogleTest {
 
         // Проверить, что Selenide появился в результатах поиска
         $("html").shouldHave(text("ru.selenide.org"));
+        $("html").shouldHave(text("selenide"));
     }
 }
