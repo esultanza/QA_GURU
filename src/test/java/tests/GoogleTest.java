@@ -11,7 +11,7 @@ class GoogleTest {
     @Test
     void selenideSearchTest() {
         // Открыть google
-        open("google.com");
+        open("https://google.com");
 
         // Ввести Selenide в поиск
         $(byName("q")).setValue("Sci-fi").pressEnter();
