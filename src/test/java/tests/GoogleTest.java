@@ -14,10 +14,9 @@ class GoogleTest {
         open("https://google.com");
 
         // Ввести Selenide в поиск
-        $(byName("q")).setValue("Selenide").pressEnter();
+        $(byName("q")).setValue("Sci-fi").pressEnter();
 
         // Проверить, что Selenide появился в результатах поиска
-        $("html").shouldHave(text("ru.selenide.org"));
-        $("html").shouldHave(text("selenide"));
+        $("html").shouldHave(text("Научная фантастика"));
     }
 }
