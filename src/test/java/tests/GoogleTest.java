@@ -17,6 +17,6 @@ class GoogleTest {
         $(byName("q")).setValue("Sci-fi").pressEnter();
 
         // Проверить, что Selenide появился в результатах поиска
-        $("html").shouldHave(text("Научная фантастика"));
+        $("html").shouldHave(text("syfy.com"));
     }
 }
