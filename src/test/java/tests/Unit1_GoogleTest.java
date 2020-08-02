@@ -16,7 +16,7 @@ class Unit1_GoogleTest {
         // Ввести Sci-fi в поиск
         $(byName("q")).setValue("Sci-fi").pressEnter();
 
-        // Проверить, что syfy.com появился в результатах поиска
+        // Проверить, что сайт syfy.com появился в результатах поиска
         $("html").shouldHave(text("syfy.com"));
     }
 }
