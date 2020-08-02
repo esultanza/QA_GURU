@@ -95,7 +95,7 @@ public class Unit2Tests {
     }
 
     @Test
-        // Проверка
+        // Проверка наличия введенного текста в поиске
     void yandexTest() {
         String searchText = "2020";
         // Открыть краткий Яндекс
@@ -103,9 +103,5 @@ public class Unit2Tests {
 
         getFocusedElement().sendKeys(searchText);
         $(byText(searchText)).shouldBe(visible);
-        // Не закрывать браузер
-        Configuration.holdBrowserOpen = true;
     }
 }
-
-//*[@id="main-panel"]/form/table/tbody[1]/tr[1]/td[3]/div/select/option[2]
