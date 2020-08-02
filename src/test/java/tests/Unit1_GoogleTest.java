@@ -7,16 +7,16 @@ import static com.codeborne.selenide.Selectors.byName;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-class GoogleTest {
+class Unit1_GoogleTest {
     @Test
     void selenideSearchTest() {
         // Открыть google
         open("https://google.com");
 
-        // Ввести Selenide в поиск
+        // Ввести Sci-fi в поиск
         $(byName("q")).setValue("Sci-fi").pressEnter();
 
-        // Проверить, что Selenide появился в результатах поиска
+        // Проверить, что syfy.com появился в результатах поиска
         $("html").shouldHave(text("syfy.com"));
     }
 }
