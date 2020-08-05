@@ -1,28 +1,22 @@
 package tests;
 
-import org.junit.Before;
-import org.junit.jupiter.api.*;
-import java.io.File;
 import com.codeborne.selenide.Configuration;
+import org.junit.jupiter.api.Test;
+
+import java.io.File;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
-public class Unit2Tests {
-
-    @Before
-    public void setBrowser(){
-        Configuration.browser = "chrome";
-        Configuration.holdBrowserOpen = true;
-    }
+public class Unit3Alfa {
 
     @Test
-        // Проверка добавления СНИЛС из Населения
+        // Депозиты
     void uploadNaselenieTest() {
         // Открыть загрузчик
-        open("http://172.17.65.231:8080/MdmServices/loadFiles.zul");
+        open("https://alfabank.ru/make-money/savings-account/");
         // Нажать кнопку загрузки файла Население
         //*[@id="dW1Q50"]
 
