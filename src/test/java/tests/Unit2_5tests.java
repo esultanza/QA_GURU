@@ -1,22 +1,21 @@
 package tests;
 
-import org.junit.Before;
-import org.junit.jupiter.api.*;
-import java.io.File;
 import com.codeborne.selenide.Configuration;
+import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Condition.visible;
+import java.io.File;
+
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
-public class Unit2Tests {
-
-    @Before
-    public void setBrowser(){
-        Configuration.browser = "chrome";
-        Configuration.holdBrowserOpen = true;
-    }
+class Unit2Tests {
+//
+//    @Before
+//    public void setBrowser(){
+//        Configuration.browser = "chrome";
+//        Configuration.holdBrowserOpen = true;
+//    }
 
     @Test
         // Проверка добавления СНИЛС из Населения
