@@ -10,19 +10,13 @@ import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
 class Unit2Tests {
-//
-//    @Before
-//    public void setBrowser(){
-//        Configuration.browser = "chrome";
-//        Configuration.holdBrowserOpen = true;
-//    }
 
     @Test
         // Проверка добавления СНИЛС из Населения
     void uploadNaselenieTest() {
         // Открыть загрузчик
         open("http://172.17.65.231:8080/MdmServices/loadFiles.zul");
-        // Нажать кнопку загрузки файла Население
+        // Загрузить файл Население
         //*[@id="dW1Q50"]
 
         File file = new File("C:\\Users\\taya4\\IdeaProjects\\qa_guru_course_2\\src\\test\\resources\\naselenie.csv");
