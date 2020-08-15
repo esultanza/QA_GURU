@@ -1,32 +1,39 @@
 package tests;
 
-import com.codeborne.selenide.CollectionCondition;
 import org.junit.jupiter.api.*;
 
+import static com.codeborne.selenide.CollectionCondition.size;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
-class Unit3AlfaTests {
+class Unit3AlfabankTests {
 
-    @BeforeEach
-    void openMainPage() {
-        open("https://alfabank.ru/");
+    @BeforeAll
+    static void openMainPage() {
+        Configuration = "https://alfabank.ru";
     }
 
     @Test
-        // Депозиты
-    void depositTest() {
+    @DisplayName("Депозиты")    
+    void depositsSizeTest() {
+        open("");
+        
         $(byTitle("Вклады")).click();
         $(byTitle("Депозиты")).click();
         $(byText("Архивные депозиты")).click();
+        
         // Должно отобразиться 3 архивных депозита
-        $$(".product-cell__cell").shouldHave(CollectionCondition.size(3));
+        $$(".product-cell__cell").shouldHave(size(3));
     }
+    
     @Test
-        // Страхование вкладов
+    @DisplayName("Страхование вкладов")
     void strahovanie_vkladovTest() {
+        open("");
+        
         $(byTitle("Вклады")).click();
+        
         $(".navigation li").parent().shouldHave(text("Страхование вкладов"));
     }
 }
