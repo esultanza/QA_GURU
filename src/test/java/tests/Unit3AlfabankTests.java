@@ -11,7 +11,7 @@ class Unit3AlfabankTests {
 
     @BeforeAll
     static void openMainPage() {
-        Configuration = "https://alfabank.ru";
+        open("https://alfabank.ru");
     }
 
     @Test
