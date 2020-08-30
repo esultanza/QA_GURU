@@ -29,7 +29,6 @@ class TestBase {
         attachAsText("getBrowserConsoleLogs console logs", getBrowserConsoleLogs());
         attachAsText("getClientConsoleLogs console logs", getClientConsoleLogs());
         attachAsText("getDriverConsoleLogs console logs", getDriverConsoleLogs());
-        attachAsText("getPerformanceConsoleLogs console logs", getPerformanceConsoleLogs());
         attachAsText("getProfilerConsoleLogs console logs", getProfilerConsoleLogs());
 
         closeWebDriver();
@@ -45,10 +44,6 @@ class TestBase {
 
     public static String getDriverConsoleLogs() {
         return String.join("\n", Selenide.getWebDriverLogs(DRIVER));
-    }
-
-    public static String getPerformanceConsoleLogs() {
-        return String.join("\n", Selenide.getWebDriverLogs(PERFORMANCE));
     }
 
     public static String getProfilerConsoleLogs() {
