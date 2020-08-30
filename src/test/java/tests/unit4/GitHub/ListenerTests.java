@@ -1,8 +1,6 @@
 package tests.unit4.GitHub;
 import io.qameta.allure.*;
 import io.qameta.allure.restassured.AllureRestAssured;
-import main.ApiSteps;
-import main.Issue;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.*;

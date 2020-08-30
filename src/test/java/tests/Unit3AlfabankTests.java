@@ -1,7 +1,7 @@
 package tests;
 
 import org.junit.jupiter.api.*;
-
+import com.codeborne.selenide.Configuration;
 import static com.codeborne.selenide.CollectionCondition.size;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.*;
