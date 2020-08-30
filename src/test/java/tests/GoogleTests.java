@@ -38,8 +38,7 @@ class GoogleTests extends TestBase {
     }
 
     @Test
-    void negativeJenkinsTest() {
-        // Открыть google
+    void Jenkins404Test() {
         open("https://jenkins.autotests.cloud/view/QA.GURU%20examples/job/jenkins_tests/ws/build/");
     }
 }
